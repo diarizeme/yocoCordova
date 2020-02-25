@@ -1,0 +1,15 @@
+{
+  "name": "yoco",
+  "version": "1.0.0",
+  "description": "This is the Yoco cordova plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yoco",
+    "payment"
+  ],
+  "author": "Mark Raa",
+  "license": "ISC"
+}
