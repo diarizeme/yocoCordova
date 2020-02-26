@@ -20,7 +20,7 @@
     NSNumber* param2 = [[command.arguments objectAtIndex:0] valueForKey:@"param2"];
 
     if(param1 >= 0) {
-        NSString* total = @(param1 + param2);
+        NSString* total = @(param1);
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:total];
     }
     else {
