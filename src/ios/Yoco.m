@@ -16,10 +16,10 @@
 - (void)add:(CDVInvokedUrlCommand*)command
 {
     CDVPluginResult* pluginResult = nil;
-    NSNumber* param1 = [command.arguments objectAtIndex:0] valueForKey:@"param1";
-    NSNumber* param2 = [command.arguments objectAtIndex:0] valueForKey:@"param2";
+    NSNumber* param1 = [[command.arguments objectAtIndex:0] valueForKey:@"param1"];
+    NSNumber* param2 = [[command.arguments objectAtIndex:0] valueForKey:@"param2"];
 
-    if(param1 >= 0 && param2 >= 0) {
+    if(param1 >= 0) {
         NSString* total = @(param1 + param2);
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:total];
     }
